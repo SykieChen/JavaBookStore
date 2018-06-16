@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Search</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="//cdn.bootcss.com/weui/0.4.0/style/weui.min.css"/>
+        <script src="//cdn.bootcss.com/jquery/3.0.0/jquery.min.js"></script>
+    </head>
+    <body>
+        <form action="Controller" method="post">
+            <div class="weui_cells_title">Search Page</div>
+            <div class="weui_cells weui_cells_form">
+                <div class="weui_cell">
+                    <div class="weui_cell_hd">
+                        <label class="weui_label">Key word: </label>
+                    </div>
+                    <div class="weui_cell_bd weui_cell_primary">
+                        <input class="weui_input" name="key" type="text" placeholder="Enter key word">
+                    </div>
+                </div>
+            </div>
+            <input class="weui_input" name="page" type="hidden" value="search">
+            <input class="weui_btn weui_btn_primary" type="submit" value="Query"/>
+        </form>
+    </body>
+</html>
